@@ -1,0 +1,119 @@
+body {
+  align-items: center;
+  background: #4D6E84;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+video {
+  height: auto;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+wheel {
+  height: 500px;
+  margin-top: 60px;
+  position: relative;
+  width: 500px;
+}
+
+canvas {
+  height: 500px;
+  margin-top: 60px;
+  top: 0px;
+  position: absolute;
+  width: 500px;
+}
+
+node {
+  background-position: 0 0;
+  background-size: 100px auto;
+  border-radius: 50%;
+  display: block;
+  height: 100px;
+  position: absolute;
+  transform: translate(-50px, -50px);
+  transition: background-size .2s, background-position .2s, height .2s, transform .2s, width .2s;
+  width: 100px;
+}
+
+node:hover {
+  background-position: -5px -5px;
+  background-size: 120px auto;
+  height: 110px;
+  transform: translate(-55px, -55px);
+  width: 110px;
+}
+
+.labels {
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+.label {
+  background: rgba(0, 0, 0, .5);
+  border-radius: 50%;
+  color: #fff;
+  filter: blur(3px);
+  font-family: 'Slabo 27px', sans-serif;
+  height: 110px;
+  opacity: 0;
+  padding: 30px 10px 0px 10px;
+  position: absolute;
+  text-align: center;
+  transition: opacity .2s, filter .2s;
+  width: 120px;
+  z-index: 1;
+}
+
+.visible {
+  filter: blur(0px);
+  opacity: 1;
+}
+
+#jon {
+  background-image: url('assets/jon.jpg');
+  left: 37%;
+  top: 6%
+}
+
+#tormund {
+  background-image: url('assets/tormund.jpg');
+  left: 77%;
+  top: 15%;
+}
+
+#jorah {
+  background-image: url('assets/jorah.png');
+  left: 6%;
+  top: 71%;
+}
+
+#gendry {
+  background-image: url('assets/gendry.png');
+  left: 77%;
+  top: 88%;
+}
+
+#beric {
+  background-image: url('assets/beric.jpg');
+  left: 37%;
+  top: 97%;
+}
+
+#sandor {
+  background-image: url('assets/sandor.jpg');
+  left: 94%;
+  top: 51%;
+}
+
+#thoros {
+  background-image: url('assets/thoros.jpg');
+  left: 6%;
+  top: 31%;
+}
